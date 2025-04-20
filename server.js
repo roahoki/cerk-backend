@@ -12,7 +12,7 @@ const server = createServer(app);
 
 // --- Configuraciones iniciales ---
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://cerk.netlify.app/', 
   methods: ['GET', 'POST'],
 }));
 app.use(logger('dev'));
@@ -20,7 +20,7 @@ app.use(bodyParser.json()); // ← Para recibir JSON desde el frontend
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173',
+    origin: 'https://cerk.netlify.app/',
     methods: ['GET', 'POST'],
   },
 });
