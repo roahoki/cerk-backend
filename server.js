@@ -148,10 +148,10 @@ app.post('/api/login', (req, res) => {
 
 // --- Servir HTML principal si alguien accede directo ---
 app.get('/', (req, res) => {
-  res.sendFile(process.cwd() + '/front/index.html');
+  res.sendFile(process.cwd() + 'https://cerk.netlify.app/');
 });
 
 // --- Iniciar servidor ---
 server.listen(3000, () => {
-  console.log('🚀 Servidor corriendo en http://localhost:3000');
+  console.log('🚀 Servidor corriendo en https://cerk-backend.onrender.com/');
 });
